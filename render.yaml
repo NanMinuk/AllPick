@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: family-food-ai-backend
+    runtime: node
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: PORT
+        value: 4000
+    healthCheckPath: /health

@@ -1,0 +1,109 @@
+.judgment-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.judgment-row:last-child { border-bottom: none; }
+
+.judgment-row.good { background: rgba(232,245,233,0.4); }
+.judgment-row.caution { background: rgba(254,249,231,0.4); }
+.judgment-row.bad { background: rgba(253,237,236,0.4); }
+
+.judgment-member {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 64px;
+}
+
+.judgment-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.judgment-member-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.judgment-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.judgment-age {
+  font-size: 11px;
+  color: var(--text-sub);
+}
+
+.judgment-result {
+  flex: 1;
+}
+
+.judgment-status-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 3px;
+}
+
+.judgment-emoji { font-size: 14px; }
+
+.judgment-label {
+  font-size: 12px;
+  font-weight: 700;
+  padding: 1px 8px;
+  border-radius: 10px;
+}
+
+.judgment-label.good { background: var(--good-bg); color: var(--good); }
+.judgment-label.caution { background: var(--caution-bg); color: var(--caution); }
+.judgment-label.bad { background: var(--bad-bg); color: var(--bad); }
+
+.judgment-reason {
+  font-size: 13px;
+  color: var(--text-main);
+  line-height: 1.4;
+}
+
+.judgment-warning {
+  font-size: 12px;
+  color: var(--bad);
+  margin-top: 3px;
+  font-weight: 500;
+}
+
+.judgment-detail-btn {
+  margin-top: 6px;
+  background: none;
+  border: none;
+  font-size: 11px;
+  color: var(--text-sub);
+  padding: 0;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.judgment-detail {
+  margin-top: 8px;
+  font-size: 12px;
+  color: var(--text-sub);
+  line-height: 1.6;
+  background: rgba(0,0,0,0.03);
+  border-radius: 6px;
+  padding: 8px 10px;
+}
